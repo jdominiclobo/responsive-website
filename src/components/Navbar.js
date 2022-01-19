@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { GiSmokingFinger } from "react-icons/gi";
+import { FaBeer, FaTimes } from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -7,7 +9,8 @@ function Navbar() {
       <div className="navbar">
         <div className="navbar-container container">
           <Link to="/" className="navbar-logo">
-            Website
+            <GiSmokingFinger className="navbar-icon" />
+            Smokin
           </Link>
           <div className="menu-icon">{}</div>
         </div>
@@ -15,5 +18,4 @@ function Navbar() {
     </>
   );
 }
-
 export default Navbar;
