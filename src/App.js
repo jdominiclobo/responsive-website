@@ -7,20 +7,19 @@ import Account from "./components/pages/Account/Account";
 import Contact from "./components/pages/Contact/Contact";
 import SignUp from "./components/pages/Signup/SignUp";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Home />
-      <Footer />
       <Routes>
-        <Route path="/" exact element={Home} />
-        <Route path="/account" element={Account} />
-        <Route path="/contact" element={Contact} />
-        <Route path="/signup" element={SignUp} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/account" element={<Account />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
-}
+};
 
 export default App;
